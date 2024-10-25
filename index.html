@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="syle.css">
+
+  <title>Calculator</title>
+</head>
+<body>
+  
+    
+      
+      <div class="cal-panel">
+       
+     <div class="box1"><input type="text" class="inp-cal" readonly >
+      </div>  
+       <div class="cal-num">
+        <button onclick="
+           cur_display='';
+       document.querySelector('.inp-cal').value=cur_display;
+          ">c</button>
+        <button  onclick="
+       cur_display=cur_display+'1';
+       document.querySelector('.inp-cal').value=cur_display;
+       "
+       >1</button>
+        <button  onclick="
+         cur_display=cur_display+'2';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">2</button>
+        <button  onclick="
+         cur_display=cur_display+'+';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">+</button>
+        <button  onclick="
+         cur_display=cur_display+'3';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">3</button> 
+        <button  onclick="
+         cur_display=cur_display+'4';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">4</button>
+        <button  onclick="
+         cur_display=cur_display+'-';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">-</button>
+         <button  onclick="
+          cur_display=cur_display+'5';
+       document.querySelector('.inp-cal').value=cur_display;
+         ">5</button>
+         <button  onclick="
+          cur_display=cur_display+'6';
+       document.querySelector('.inp-cal').value=cur_display;">6</button>
+         <button  onclick="
+          cur_display=cur_display+'*';
+       document.querySelector('.inp-cal').value=cur_display;">*</button>
+        <button  onclick="
+         cur_display=cur_display+'7';
+       document.querySelector('.inp-cal').value=cur_display;">7</button>
+        <button  onclick="
+         cur_display=cur_display+'8';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">8</button>
+        <button  onclick="
+         cur_display=cur_display+'/';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">/</button>
+        <button  onclick="
+        let result=eval(cur_display);
+         cur_display=result;
+       document.querySelector('.inp-cal').value=cur_display;
+        ">=</button>
+        <button  onclick="
+         cur_display=cur_display+'9';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">9</button>
+        <button  onclick="
+         cur_display=cur_display+'.';
+       document.querySelector('.inp-cal').value=cur_display;
+        ">.</button>
+        <button id="last"  onclick="
+         cur_display=cur_display+'0';
+       document.querySelector('.inp-cal').value=cur_display;
+        "> 0</button>
+      
+       </div>
+      </div>
+
+
+ <script >
+   let cur_display='';
+   document.querySelector(".inp-cal").value=cur_display;
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  font-size: 16px;
+}
+
+.cal-panel{
+  display: flex;
+  flex-direction:column ;
+  width: 500px;
+  height: 700px;
+  border: 3px solid rgb(168, 159, 159);
+  border-radius:10px;
+  margin: 0px auto;
+
+}
+.box1{
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+
+.inp-cal{
+   margin: 20px;
+   width: 85.5%;
+   height: 100px;
+   border: 3px solid rgb(167, 156, 156);
+   border-radius: 20px;
+   
+   
+
+
+}
+.cal-num{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6,1fr );
+    margin: 20px;
+    
+
+}
+
+button{
+  font-size: 2rem;
+ height: 80px;
+
+}
+#last{
+  grid-column: 2/-1 ;
+}
